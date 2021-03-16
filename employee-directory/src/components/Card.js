@@ -1,16 +1,16 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
  return (
     <div className="card">
-      {/* <h2>Name: {name.first} {name.last}</h2>
+      <h2>Name: {props.name.first} {props.name.last}</h2>
       <div className="card-body">
         <ul>
-          <li>{picture.thumbnail}</li>
-          <li>Cell Phone: {cell}</li>
-          <li>Email: {email}</li>
+          <li>{props.picture.thumbnail}</li>
+          <li>Cell Phone: {props.cell}</li>
+          <li>Email: {props.email}</li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 }
