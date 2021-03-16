@@ -1,17 +1,16 @@
 import React from "react";
 
 function Card() {
-  return (
+ return (
     <div className="card">
+      {/* <h2>Name: {name.first} {name.last}</h2>
       <div className="card-body">
-        <p className="card-text">
-          Aliquip dolore commodo nostrud minim. Cillum do enim non ullamco. Commodo magna eu ex
-          mollit sunt amet fugiat. In irure eu enim id ea sit nostrud incididunt ad
-          adipisicing.Aliquip dolore commodo nostrud minim. Cillum do enim non ullamco. Commodo
-          magna eu ex mollit sunt amet fugiat. In irure eu enim id ea sit nostrud incididunt ad
-          adipisicing.
-        </p>
-      </div>
+        <ul>
+          <li>{picture.thumbnail}</li>
+          <li>Cell Phone: {cell}</li>
+          <li>Email: {email}</li>
+        </ul>
+      </div> */}
     </div>
   );
 }
