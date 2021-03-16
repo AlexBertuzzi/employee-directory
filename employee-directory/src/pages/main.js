@@ -6,7 +6,7 @@ import Card from "../components/Card";
 
 class Main extends Component {
     state = {
-        search: "",
+        //search: "",
         employees: [],
         //alphaEmployees: [],
         //antiAlphaEmployees: []
@@ -14,7 +14,8 @@ class Main extends Component {
 
     componentDidMount() {
         API.getAll()
-          .then(res => this.setState({ employees: res.data}))
+          .then(res => this.setState({ employees: res.data.results}))
+          .catch(err => console.log(err))
           .then(console.log(this));
     }
 
@@ -26,7 +27,7 @@ class Main extends Component {
               <Navbar>
 
               </Navbar>
-              <Card>
+              <Card results={this.state.employees}>
 
               </Card>
             </Container>
